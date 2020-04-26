@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+    <% datashow2.forEach(data2){%>
+        <li>
+            <p><%data2.name%></p>
+            <p><%data2.img%></p>
+            <p><%data2.level%></p>
+        </li>
+
+        <form action="/details"></form>
+        <button> details </button>
+
+        <form action="/details" method='put'></form>
+        <button>update</button>
+
+        <form action="/details" method='delete'></form>
+        <button>delete</button>
+
+    <%)}%>
+    
+</body>
+</html>
